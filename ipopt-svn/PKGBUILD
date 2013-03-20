@@ -29,24 +29,24 @@ _has_hsl=1
 # For detailed information on Ipopt installation procedure:
 # http://www.coin-or.org/Ipopt/documentation/node211.html#ExpertInstall
 build() {
-    export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$startdir/src/Ipopt-svn/Ipopt
-    export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$startdir/pkg/usr/lib/pkgconfig
+    export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$srcdir/Ipopt-svn/Ipopt
+    export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$pkgdir/usr/lib/pkgconfig
 
     msg "Downloading Ipopt source from SVN repository..."
-    svn co https://projects.coin-or.org/svn/Ipopt/trunk Ipopt-svn || return 1
+    svn co https://projects.coin-or.org/svn/Ipopt/trunk Ipopt-svn
     
-    cd $startdir/src/Ipopt-svn/ThirdParty
+    cd $srcdir/Ipopt-svn/ThirdParty
 
     # If we already installed libcoinhsl
     if [ ${_has_hsl} -eq 0 ] ; then
-        export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$startdir/src/Ipopt-svn/ThirdParty/HSL/
+        export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$srcdir/Ipopt-svn/ThirdParty/HSL/
     else
         export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig/
     fi
 
     # If we want to use METIS
     if [ ${_use_metis} -eq 1 ] ; then
-        export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$startdir/src/Ipopt-svn/ThirdParty/Metis/
+        export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$srcdir/Ipopt-svn/ThirdParty/Metis/
         msg "Getting METIS..."
         cd Metis
         ./get.Metis
@@ -55,7 +55,7 @@ build() {
 
     # If we want to use MUMPS
     if [ ${_use_mumps} -eq 1 ] ; then
-        export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$startdir/src/Ipopt-svn/ThirdParty/Mumps/
+        export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$srcdir/Ipopt-svn/ThirdParty/Mumps/
         msg "Getting MUMPS..."
         cd Mumps
         ./get.Mumps
@@ -64,7 +64,7 @@ build() {
 
     # If we want to use ASL
     if [ ${_use_asl} -eq 1 ] ; then
-        export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$startdir/src/Ipopt-svn/ThirdParty/ASL/
+        export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$srcdir/Ipopt-svn/ThirdParty/ASL/
         msg "Getting ASL..."
         cd ASL
         ./get.ASL
@@ -81,30 +81,30 @@ build() {
     if [ ${_has_hsl} -eq 1 ] ; then
         # Ipopt requires some external fortran files to compile correctly
         ../configure --prefix=/usr --with-hsl-incdir=/usr/share/coin/libcoinhsl \
-                     --with-hsl="$(pkg-config coinhsl --libs)" || return 1
+                     --with-hsl="$(pkg-config coinhsl --libs)"
     else
-        ../configure --prefix=/usr || return 1
+        ../configure --prefix=/usr
     fi
 
     # Build
     msg "Building Ipopt..."
-    make || return 1
+    make
 }
 
 check() {
     msg "Running tests..."
-    cd $startdir/src/Ipopt-svn/build;
-    make test || return 1
+    cd $srcdir/Ipopt-svn/build;
+    make test
 }
 
 package() {
     msg "Installing Ipopt..."
-    cd $startdir/src/Ipopt-svn/build
+    cd $srcdir/Ipopt-svn/build
 
-    make DESTDIR=$startdir/pkg install || return 1
+    make DESTDIR=$pkgdir install
 
-    mkdir -p $startdir/pkg/etc/ld.so.conf.d/
-    cd $startdir/pkg/etc/ld.so.conf.d/
+    mkdir -p $pkgdir/etc/ld.so.conf.d/
+    cd $pkgdir/etc/ld.so.conf.d/
     echo "/usr/lib/coin" >ipopt.conf
     echo "/usr/lib/coin/ThirdParty" >>ipopt.conf
 }
