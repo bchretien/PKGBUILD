@@ -9,7 +9,7 @@ arch=(i686 x86_64)
 url="https://projects.coin-or.org/Ipopt"
 license=('GPL')
 depends=(blas lapack)
-optdepends=('libhsl: user-provided HSL libraries')
+optdepends=('libcoinhsl: user-provided COIN-HSL libraries')
 makedepends=(svn)
 provides=()
 conflicts=(ipopt)
@@ -80,7 +80,7 @@ build() {
 
     if [ ${_has_hsl} -eq 1 ] ; then
         # Ipopt requires some external fortran files to compile correctly
-        ../configure --prefix=/usr --with-hsl-incdir=/usr/share/libhsl \
+        ../configure --prefix=/usr --with-hsl-incdir=/usr/share/coin/libcoinhsl \
                      --with-hsl="$(pkg-config coinhsl --libs)" || return 1
     else
         ../configure --prefix=/usr || return 1
