@@ -1,6 +1,6 @@
 # Maintainer: Benjamin Chretien <chretien@lirmm.fr>
 
-pkgname=libhsl
+pkgname=libcoinhsl
 pkgver="2012.12.21"
 pkgrel=1
 pkgdesc="A collection of Fortran codes for large scale scientific computation."
@@ -14,8 +14,8 @@ license=('custom:HSL Academic Licence')
 
 depends=()
 makedepends=()
-provides=('libhsl')
-conflicts=('libhsl')
+provides=('libcoinhsl')
+conflicts=()
 
 # Add the HSL Academic Licence
 source=('license.txt')
@@ -38,7 +38,7 @@ build() {
         return 1
     fi
 
-    msg "Unpacking user-provided HSL sources"
+    msg "Unpacking user-provided COIN-HSL sources"
     tar -xf ${_COINHSL_PATH}/${_COINHSL_NAME}.tar
 
     cd $startdir/src/${_COINHSL_NAME};
@@ -46,17 +46,17 @@ build() {
     msg "Configuring installation"
     ./configure --prefix=/usr
 
-    msg "Compiling libhsl"
+    msg "Compiling libcoinhsl"
     make -j1 || return 1
 }
 
 package() {
     cd $startdir/src/${_COINHSL_NAME};
-    msg "Installing libhsl"
+    msg "Installing libcoinhsl"
     make DESTDIR=$startdir/pkg install || return 1
     
     # Copy some Fortran source files to /usr/share/libhsl since other programs
     # like Ipopt rely on some of those files (e.g. hsl_ma77_double.mod)
-    mkdir -p "$pkgdir/usr/share/libhsl"
-    cp *.mod "$pkgdir/usr/share/libhsl/"
+    mkdir -p "$pkgdir/usr/share/coin/libcoinhsl"
+    cp *.mod "$pkgdir/usr/share/coin/libcoinhsl/"
 }
