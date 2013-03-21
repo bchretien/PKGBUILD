@@ -3,9 +3,9 @@
 pkgname=libcoinhsl
 pkgver="2012.12.21"
 pkgrel=1
-pkgdesc="A collection of Fortran codes for large scale scientific computation."
+pkgdesc="A number of HSL linear solvers that can be used in IPOPT"
 arch=(i686 x86_64)
-url="http://www.hsl.rl.ac.uk"
+url="http://www.hsl.rl.ac.uk/ipopt/"
 
 # HSL offers 3 types of licence:
 # academic, commercial (per seat) and commercial (incorporation)
