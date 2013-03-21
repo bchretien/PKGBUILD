@@ -38,7 +38,8 @@ md5sums=('38f73d0e7e8984cc8eaa5007fc97dae0'
 build() {
     # Check if the user provides a source archive
     if [ -z ${_HSL_PATH} ] ; then
-        error "Missing user-provided directory name"
+        error "Missing user-provided source directory path."
+        error "Files have to be provided by the user. See http://www.hsl.rl.ac.uk"
         return 1
     fi
 
