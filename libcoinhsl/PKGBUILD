@@ -38,25 +38,25 @@ build() {
         return 1
     fi
 
-    msg "Unpacking user-provided COIN-HSL sources"
+    msg "Unpacking user-provided COIN-HSL sources..."
     tar -xf ${_COINHSL_PATH}/${_COINHSL_NAME}.tar
 
     cd $srcdir/${_COINHSL_NAME};
 
-    msg "Configuring installation"
+    msg "Configuring installation..."
     ./configure --prefix=/usr
 
-    msg "Compiling libcoinhsl"
+    msg "Compiling libcoinhsl..."
     make -j1
 }
 
 package() {
     cd $srcdir/${_COINHSL_NAME};
-    msg "Installing libcoinhsl"
+    msg "Installing libcoinhsl..."
     make DESTDIR=$pkgdir install
     
-    # Copy some Fortran source files to /usr/share/libhsl since other programs
-    # like Ipopt rely on some of those files (e.g. hsl_ma77_double.mod)
+    # Copy some Fortran source files to /usr/share/coin/libcoinhsl since
+    # Ipopt rely on some of those files (e.g. hsl_ma77_double.mod)
     mkdir -p "$pkgdir/usr/share/coin/libcoinhsl"
     cp *.mod "$pkgdir/usr/share/coin/libcoinhsl/"
 }
