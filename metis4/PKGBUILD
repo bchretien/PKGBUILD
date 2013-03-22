@@ -40,9 +40,9 @@ build() {
   cp ${srcdir}/cmake/Test/CMakeLists.txt     ${srcdir}/metis-${pkgver}/Test
 
   cd ${srcdir}/metis-${pkgver}
-  msg "Patching mtest.c..."
+  msg "Patching mtest.c for unit tests..."
   patch -p1 < ../mtest.c.patch
-  msg "Patching proto.h..."
+  msg "Patching proto.h for unit tests..."
   patch -p1 < ../proto.h.patch
 
   msg "Running CMake..."
