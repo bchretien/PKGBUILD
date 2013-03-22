@@ -7,6 +7,7 @@ A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 * ipopt-svn: unpublished
 * libcoinhsl: https://aur.archlinux.org/packages/libcoinhsl/
 * libhsl: https://aur.archlinux.org/packages/libhsl/
+* metis4: https://aur.archlinux.org/packages/metis4/
 * roboptim-core-git: https://aur.archlinux.org/packages/roboptim-core-git/
 * roboptim-plugin-ipopt-git: https://aur.archlinux.org/packages/roboptim-core-plugin-ipopt-git/
 * roboptim-trajectory-git: unpublished
