@@ -4,7 +4,7 @@ PKGBUILD
 A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 
 * ipopt: https://aur.archlinux.org/packages/ipopt/
-* ipopt-svn: unpublished
+* ipopt-svn: https://aur.archlinux.org/packages/ipopt-svn/
 * libcoinhsl: https://aur.archlinux.org/packages/libcoinhsl/
 * libhsl: https://aur.archlinux.org/packages/libhsl/
 * metis4: https://aur.archlinux.org/packages/metis4/
