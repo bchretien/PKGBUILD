@@ -9,8 +9,8 @@ url="http://researcher.watson.ibm.com/researcher/view_project.php?id=1426"
 license=('custom:IBM ILAR')
 
 if [ "$CARCH" == "x86_64" ]; then
-    _archive_name="${pkgname}-Linux64-Intel"
-    md5sums=('c9279438f751919c21080c38a8ad5545')
+    _archive_name="${pkgname}-Linux64-GNU"
+    md5sums=('4ce12e6c52f4d2f435ef2f869d3c8a2d')
 elif [ "$CARCH" == "i686" ]; then
     _archive_name="${pkgname}-Linux32"
     md5sums=('fa69838c1893c217dd4ee66ba646e15b')
