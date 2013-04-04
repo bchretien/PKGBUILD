@@ -37,7 +37,7 @@ package() {
   cd "${srcdir}/ros-underlay/build"
   make DESTDIR="${pkgdir}" install
 }
-md5sums=('3d6eea3ea89525122626605feb35fa4b'
+md5sums=('59faab4fee1567dd0f6f2f373673bb91'
          '443e63dd76e1e796382b6aed52000e3c'
          'd575e1c211d1389e634f63afba09c326'
          '60325a3823752febdaff313d00d26d1a')
