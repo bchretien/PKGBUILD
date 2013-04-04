@@ -1,0 +1,12 @@
+--- ros_tutorials/turtlesim/CMakeLists.txt	2013-04-04 11:58:07.770293531 +0900
++++ ros_tutorials/turtlesim/CMakeLists.txt	2013-04-04 12:37:54.515809655 +0900
+@@ -29,7 +29,8 @@
+   include/turtlesim/turtle_frame.h
+ )
+ 
+-qt4_wrap_cpp(turtlesim_node_MOCS ${turtlesim_node_HDRS})
++qt4_wrap_cpp(turtlesim_node_MOCS ${turtlesim_node_HDRS}
++ OPTIONS -DBOOST_NO_TEMPLATE_PARTIAL_SPECIALIZATION)
+ 
+ 
+ add_executable(turtlesim_node ${turtlesim_node_SRCS} ${turtlesim_node_MOCS})
