@@ -1,4 +1,5 @@
 # Maintainer: Paul Hollensen < ${lastname::8} @cs.dal.ca >
+# Contributor: Benjamin Chretien <chretien@lirmm.fr>
 pkgname=ros-core
 pkgver=1.8.9
 pkgrel=3
