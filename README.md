@@ -3,6 +3,7 @@ PKGBUILD
 
 A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 
+* fusesmb: https://aur.archlinux.org/packages/fusesmb/
 * ipopt: https://aur.archlinux.org/packages/ipopt/
 * ipopt-svn: https://aur.archlinux.org/packages/ipopt-svn/
 * libcoinhsl: https://aur.archlinux.org/packages/libcoinhsl/
