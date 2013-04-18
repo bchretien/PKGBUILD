@@ -4,7 +4,7 @@
 # Contributor: James Rayner <iphitus@gmail.com>
 
 pkgname=nvidia-utils-bumblebee
-pkgver=304.51   
+pkgver=304.88
 pkgrel=2
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
@@ -26,7 +26,7 @@ elif [ "$CARCH" = "x86_64" ]; then
     _arch='x86_64'
     _pkg="NVIDIA-Linux-${_arch}-${pkgver}-no-compat32"
     source=("ftp://download.nvidia.com/XFree86/Linux-${_arch}/${pkgver}/${_pkg}.run")
-    md5sums=('2ca10e05cd3b5d2a87caaaad9fd93c06')
+    md5sums=('35e0c7d30de795cccb6b95bda991fb77')
 fi
 
 create_links() {
