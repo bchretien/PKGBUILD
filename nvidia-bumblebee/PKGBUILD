@@ -3,9 +3,9 @@
 # Contributor : Thomas Baechler <thomas@archlinux.org>
 
 pkgname=nvidia-bumblebee
-pkgver=304.88
+pkgver=319.12
 _extramodules=extramodules-3.8-ARCH
-pkgrel=3
+pkgrel=1
 pkgdesc="NVIDIA drivers for linux. Packaged for Bumblebee"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
@@ -20,20 +20,39 @@ options=(!strip)
 if [ "$CARCH" = "i686" ]; then
     _arch='x86'
     _pkg="NVIDIA-Linux-${_arch}-${pkgver}"
-    source=("ftp://download.nvidia.com/XFree86/Linux-${_arch}/${pkgver}/${_pkg}.run")
+    source=("ftp://download.nvidia.com/XFree86/Linux-${_arch}/${pkgver}/${_pkg}.run"
+        "linux-3.7.patch"
+        "linux-3.8.patch")
     md5sums=('4fde294e139a31528ea7f6efd8885a09')
 elif [ "$CARCH" = "x86_64" ]; then
     _arch='x86_64'
     _pkg="NVIDIA-Linux-${_arch}-${pkgver}-no-compat32"
-    source=("ftp://download.nvidia.com/XFree86/Linux-${_arch}/${pkgver}/${_pkg}.run")
-    md5sums=('35e0c7d30de795cccb6b95bda991fb77')
+    source=("ftp://download.nvidia.com/XFree86/Linux-${_arch}/${pkgver}/${_pkg}.run"
+        "linux-3.7.patch"
+        "linux-3.8.patch")
+    md5sums=('f662eff5946a27d3dd02e9d878342c38')
 fi
+md5sums=(${md5sums[@]}
+         '7c684fab691b15d55a79fd8f9b1a224d'
+         '9b20edcefc8ad28f40bdf9a5e26ef731')
 
 build() {
-    _kernver="$(cat /usr/lib/modules/${_extramodules}/version || true)"
+    _kernver="$(cat /usr/lib/modules/${_extramodules}/version)"
     cd "${srcdir}"
+    if [ -d ${_pkg} ]; then
+      rm -rf ${_pkg}
+    fi
     sh "${_pkg}.run" --extract-only
     cd "${_pkg}/kernel"
+    _mainver=`echo ${_kernver} | cut -d'.' -f-1`
+    _majorver=`echo ${_kernver} | cut -d'.' -f-2 | cut -d'.' -f2-`
+    _minorver=`echo ${_kernver} | cut -d'-' -f-1 | cut -d'.' -f3-`
+    if [[ "${_mainver}" -ge "3" && "${_majorver}" -ge "7" ]]; then
+      patch -Np3 -i "${srcdir}"/linux-3.7.patch
+      if [[ "${_mainver}" -ge "3" && "${_majorver}" -ge "8" && "${_minorver}" -lt "2" ]]; then
+        patch -Np1 -i "${srcdir}"/linux-3.8.patch
+      fi
+    fi
     make SYSSRC=/usr/lib/modules/"${_kernver}/build" module
 }
 
@@ -41,7 +60,7 @@ package() {
     install -D -m644 "${srcdir}/${_pkg}/kernel/nvidia.ko" \
         "${pkgdir}/usr/lib/modules/${_extramodules}/nvidia.ko"
     install -d -m755 "${pkgdir}/usr/lib/modprobe.d"
-    echo "blacklist nouveau" >> "${pkgdir}/usr/lib/modprobe.d/nouveau_blacklist.conf"
+    echo "blacklist nouveau" >> "${pkgdir}/usr/lib/modprobe.d/nvidia.conf"
     sed -i -e "s/EXTRAMODULES='.*'/EXTRAMODULES='${_extramodules}'/" "${startdir}/nvidia.install"
     gzip "${pkgdir}/usr/lib/modules/${_extramodules}/nvidia.ko"
 }

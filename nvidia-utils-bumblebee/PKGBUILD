@@ -4,8 +4,8 @@
 # Contributor: James Rayner <iphitus@gmail.com>
 
 pkgname=nvidia-utils-bumblebee
-pkgver=304.88
-pkgrel=2
+pkgver=319.12
+pkgrel=1
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
 pkgdesc="NVIDIA drivers utilities and libraries. With LibGL and xorg modules installed in a different directory."
@@ -20,19 +20,22 @@ options=('!strip')
 if [ "$CARCH" = "i686" ]; then
     _arch='x86'
     _pkg="NVIDIA-Linux-${_arch}-${pkgver}"
-    source=("ftp://download.nvidia.com/XFree86/Linux-${_arch}/${pkgver}/${_pkg}.run")
-    md5sums=('4fde294e139a31528ea7f6efd8885a09')
+    md5sums=('6f8d7de1db4f0fc4675a566470c69274')
 elif [ "$CARCH" = "x86_64" ]; then
     _arch='x86_64'
     _pkg="NVIDIA-Linux-${_arch}-${pkgver}-no-compat32"
-    source=("ftp://download.nvidia.com/XFree86/Linux-${_arch}/${pkgver}/${_pkg}.run")
-    md5sums=('35e0c7d30de795cccb6b95bda991fb77')
+    md5sums=('f662eff5946a27d3dd02e9d878342c38')
 fi
+
+source=("ftp://download.nvidia.com/XFree86/Linux-${_arch}/${pkgver}/${_pkg}.run"
+        "20-nvidia.conf")
+md5sums=(${md5sums[@]}
+         '646e64d99c44eb24b02b28defe182317')
 
 create_links() {
     # create soname links
     while read -d '' _lib; do
-        _soname="$(dirname "${_lib}")/$(readelf -d "${_lib}" | sed -nr 's/.*Library soname: \[(.*)\].*/\1/p')"
+        _soname="$(dirname "${_lib}")/$(LC_ALL=C readelf -d "${_lib}" | sed -nr 's/.*Library soname: \[(.*)\].*/\1/p')"
         [[ -e "${_soname}" ]] || ln -s "$(basename "${_lib}")" "${_soname}"
         [[ -e "${_soname/.[0-9]*/}" ]] || ln -s "$(basename "${_soname}")" "${_soname/.[0-9]*/}"
     done < <(find "${pkgdir}" -type f -name '*.so*' -print0)
@@ -40,23 +43,34 @@ create_links() {
 
 build() {
     cd "${srcdir}"
+
+    if [ -d ${_pkg} ]; then
+      rm -rf ${_pkg}
+    fi	
+
+    # Extract the source
     sh "${_pkg}.run" --extract-only
 }
 
 package() {
     cd "${srcdir}/${_pkg}"
+
+    # OpenCL
+    #install -D -m644 nvidia.icd "${pkgdir}/etc/OpenCL/vendors/nvidia.icd"
+    #install -D -m755 "libnvidia-compiler.so.${pkgver}" "${pkgdir}/usr/lib/libnvidia-compiler.so.${pkgver}"
+    #install -D -m755 "libnvidia-opencl.so.${pkgver}" "${pkgdir}/usr/lib/libnvidia-opencl.so.${pkgver}" 
+
+    #install -D -m755 libOpenCL.so.1.0.0 "${pkgdir}"/usr/lib/libOpenCL.so.1.0.0
+
     # X driver
     install -D -m755 nvidia_drv.so "${pkgdir}/usr/lib/xorg/modules/drivers/nvidia_drv.so"
     # GLX extension module for X
-    install -D -m755 "libglx.so.${pkgver}" "${pkgdir}/usr/lib/nvidia-bumblebee/xorg/modules/extensions/libglx.so.${pkgver}"
-    ln -s "libglx.so.${pkgver}" "${pkgdir}/usr/lib/nvidia-bumblebee/xorg/modules/extensions/libglx.so"	# X doesn't find glx otherwise
+    install -D -m755 "libglx.so.${pkgver}" "${pkgdir}/usr/lib/nvidia/xorg/modules/extensions/libglx.so.${pkgver}"
+    ln -s "libglx.so.${pkgver}" "${pkgdir}/usr/lib/nvidia/xorg/modules/extensions/libglx.so"	# X doesn't find glx otherwise
     # OpenGL library
-    install -D -m755 "libGL.so.${pkgver}" "${pkgdir}/usr/lib/nvidia-bumblebee/libGL.so.${pkgver}"
+    install -D -m755 "libGL.so.${pkgver}" "${pkgdir}/usr/lib/nvidia/libGL.so.${pkgver}"
     # OpenGL core library
     install -D -m755 "libnvidia-glcore.so.${pkgver}" "${pkgdir}/usr/lib/libnvidia-glcore.so.${pkgver}"
-    # XvMC
-    install -D -m644 libXvMCNVIDIA.a "${pkgdir}/usr/lib/libXvMCNVIDIA.a"
-    install -D -m755 "libXvMCNVIDIA.so.${pkgver}" "${pkgdir}/usr/lib/libXvMCNVIDIA.so.${pkgver}"
     # VDPAU
     install -D -m755 "libvdpau_nvidia.so.${pkgver}" "${pkgdir}/usr/lib/vdpau/libvdpau_nvidia.so.${pkgver}"
     # nvidia-tls library
@@ -64,11 +78,13 @@ package() {
     install -D -m755 "libnvidia-cfg.so.${pkgver}" "${pkgdir}/usr/lib/libnvidia-cfg.so.${pkgver}"
 
     install -D -m755 "libnvidia-ml.so.${pkgver}" "${pkgdir}/usr/lib/libnvidia-ml.so.${pkgver}"
-
     # CUDA
     install -D -m755 "libcuda.so.${pkgver}" "${pkgdir}/usr/lib/libcuda.so.${pkgver}"
     install -D -m755 "libnvcuvid.so.${pkgver}" "${pkgdir}/usr/lib/libnvcuvid.so.${pkgver}"
-
+    install -D -m755 nvidia-cuda-proxy-server "${pkgdir}/usr/bin/nvidia-cuda-proxy-server"
+    install -D -m644 nvidia-cuda-proxy-control.1.gz "${pkgdir}/usr/share/man/man1/nvidia-cuda-proxy-control.1.gz"
+    # DEBUG
+    install -D -m755 nvidia-debugdump "${pkgdir}/usr/bin/nvidia-debugdump"
     # nvidia-xconfig
     install -D -m755 nvidia-xconfig "${pkgdir}/usr/bin/nvidia-xconfig"
     install -D -m644 nvidia-xconfig.1.gz "${pkgdir}/usr/share/man/man1/nvidia-xconfig.1.gz"
@@ -91,5 +107,21 @@ package() {
     install -D -m644 NVIDIA_Changelog "${pkgdir}/usr/share/doc/nvidia/NVIDIA_Changelog"
     ln -s nvidia "${pkgdir}/usr/share/doc/nvidia-utils"
 
+    mkdir -p "${pkgdir}/usr/lib/xorg/modules/extensions"
+    ln -s "/usr/lib/nvidia/xorg/modules/extensions/libglx.so.${pkgver}" "${pkgdir}/usr/lib/xorg/modules/extensions/libglx.so.${pkgver}"
+    #ln -s "libglx.so.${pkgver}" "${pkgdir}/usr/lib/xorg/modules/extensions/libglx.so.1"
+    #ln -s "libglx.so.${pkgver}" "${pkgdir}/usr/lib/xorg/modules/extensions/libglx.so"
+
+    #ln -s "/usr/lib/nvidia/libGL.so.${pkgver}" "${pkgdir}/usr/lib/libGL.so.${pkgver}"
+    #ln -s "libGL.so.${pkgver}" "${pkgdir}/usr/lib/libGL.so.1"
+    #ln -s "libGL.so.${pkgver}" "${pkgdir}/usr/lib/libGL.so"
+
     create_links
+    if [ "$MIXNVIDIA" = "1" ]; then
+        rm ${pkgdir}/usr/lib/libGL.so
+        rm ${pkgdir}/usr/lib/libGL.so.1
+        rm ${pkgdir}/usr/lib/xorg/modules/extensions/libglx.so
+    fi
+    # Install nvidia file for xorg autodection
+    #install -D -m644 $srcdir/20-nvidia.conf "${pkgdir}/etc/X11/xorg.conf.d/20-nvidia.conf"
 }
