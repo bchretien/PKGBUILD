@@ -1,5 +1,5 @@
 --- old/agg-plot/support_x11.cpp	2013-05-22 11:05:54.379104589 +0900
-+++ new/agg-plot/support_x11.cpp.new	2013-05-22 11:09:20.804395519 +0900
++++ new/agg-plot/support_x11.cpp	2013-05-22 11:09:20.804395519 +0900
 @@ -7,8 +7,8 @@
  #define TTF_SYSTEM_DIR "/Library/Fonts/"
  #define CONSOLE_FONT_NAME "Monaco"
