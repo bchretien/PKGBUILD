@@ -10,6 +10,7 @@ A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 * libcoinhsl: https://aur.archlinux.org/packages/libcoinhsl/
 * libhsl: https://aur.archlinux.org/packages/libhsl/
 * metis4: https://aur.archlinux.org/packages/metis4/
+* pygccxml: https://aur.archlinux.org/packages/pygccxml/
 * python-pybindgen: https://aur.archlinux.org/packages/python-pybindgen/
 * roboptim-core: https://aur.archlinux.org/packages/roboptim-core/
 * roboptim-core-git: https://aur.archlinux.org/packages/roboptim-core-git/
