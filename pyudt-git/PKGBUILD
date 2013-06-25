@@ -1,0 +1,51 @@
+# Maintainer : Benjamin Chretien <chretien at lirmm dot fr>
+
+pkgname=pyudt-git
+pkgver=20130625
+pkgver() {
+  date +%Y%m%d
+}
+pkgrel=1
+pkgdesc="Python wrapper for UDP-based Data Transfer Library (UDT)"
+arch=('i686' 'x86_64')
+url="https://github.com/PyUDT/PyUDT"
+license=('GPLv3')
+depends=('python2' 'udt>=4.11' 'boost' 'boost-libs' 'log4cxx')
+makedepends=('doxygen' 'cmake' 'git')
+
+# Repository location
+_gitroot="git://github.com/bchretien/PyUDT.git"
+_gitname="pyudt"
+
+build()
+{
+  msg "Connecting to Git server"
+
+  if [ -d ${srcdir}/${_gitname} ] ; then
+      # Update local files (including submodules)
+      cd ${srcdir}/${_gitname} && git pull origin && git submodule update
+      msg "The local files are updated."
+  else
+      # Clone repository and submodules
+      git clone --recursive ${_gitroot} ${srcdir}/${_gitname}
+  fi
+
+  msg "Git checkout done or server timeout"
+
+  cd "${srcdir}/${_gitname}"
+  python2 setup.py build
+}
+
+check()
+{
+  cd ${srcdir}/${_gitname}
+  ./test/run_tests.py
+}
+
+package()
+{
+  cd ${srcdir}/${_gitname}
+  python2 setup.py install --root=${pkgdir}
+
+  # TODO: install doc and license
+}
