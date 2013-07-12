@@ -3,6 +3,7 @@ PKGBUILD
 
 A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 
+* eigen3-hg: https://aur.archlinux.org/packages/eigen3-hg/
 * fusesmb: https://aur.archlinux.org/packages/fusesmb/
 * gsl-shell-git: https://aur.archlinux.org/packages/gsl-shell-git/
 * ipopt: https://aur.archlinux.org/packages/ipopt/
