@@ -10,6 +10,7 @@ A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 * ipopt-svn: https://aur.archlinux.org/packages/ipopt-svn/
 * libcoinhsl: https://aur.archlinux.org/packages/libcoinhsl/
 * libhsl: https://aur.archlinux.org/packages/libhsl/
+* libpfm4: https://aur.archlinux.org/packages/libpfm4/
 * metis4: https://aur.archlinux.org/packages/metis4/
 * py++: https://aur.archlinux.org/packages/py++/
 * py++-svn: https://aur.archlinux.org/packages/py++-svn
