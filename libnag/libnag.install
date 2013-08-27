@@ -1,0 +1,19 @@
+post_install() {
+    echo
+    echo "###### CONCERNING YOUR LICENSE FILE ######"
+    echo
+    echo "In order to use the NAG C library, you need to copy your license "
+    echo "key to /opt/NAG/nag.key. Alternatively, set the NAG_KUSARI_FILE "
+    echo "environment variable to the full pathname of your license file."
+    echo
+}
+
+post_remove() {
+    echo
+    echo "###### CONCERNING YOUR LICENSE FILE ######"
+    echo
+    echo "If you installed your NAG license file to /opt/NAG/nag.key, it has "
+    echo "not been removed by this uninstall script."
+    echo
+}
+

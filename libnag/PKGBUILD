@@ -1,0 +1,30 @@
+# Maintainer: Benjamin Chretien <chretien@lirmm.fr>
+
+pkgname=libnag
+pkgver=23
+pkgrel=1
+pkgdesc="The NAG C Library is a comprehensive (commercial) collection of functions for the solution of numerical and statistical problems."
+arch=('i686' 'x86_64')
+url="http://www.nag.co.uk"
+license=('custom: NAG Software Licence')
+install='libnag.install'
+
+if [ "$CARCH" = "i686" ]; then
+    source=("http://www.nag.co.uk/downloads/impl/cll3a09dgl.tgz")
+    sha512sums=('904e13c90db3eb050af3094d42f4dc4264514905ed6fbf18990113172699f46070eb3558d881ef2cb22e2f8b23cc53815b0a44cdbd1a02287d949e03d07f734a')
+elif [ "$CARCH" = "x86_64" ]; then
+    source=("http://www.nag.co.uk/downloads/impl/cll6a23dhl.tgz")
+    sha512sums=('0bf26c8e687ffcad80b4094ae64e5232f63d097aa242df7b7b51faa303d72dd42d9180dd54c57fee534dc37a8c8d3782446381ae8c77dca9e79d0298c2fd0c56')
+fi
+
+# Create the package
+package() {
+    cd $srcdir
+    msg "Installing libnag..."
+
+    # Install the library files
+    ./install.sh -accept -installdir="$pkgdir/opt/NAG"
+
+    # Install the license file
+    install -Dm644 lic_agr.txt "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
