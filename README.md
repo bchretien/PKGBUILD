@@ -16,6 +16,7 @@ A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 * py++-svn: https://aur.archlinux.org/packages/py++-svn
 * pygccxml: https://aur.archlinux.org/packages/pygccxml/
 * python-pybindgen: https://aur.archlinux.org/packages/python-pybindgen/
+* rbdl-hg: https://aur.archlinux.org/packages/rbdl-hg/
 * roboptim-core: https://aur.archlinux.org/packages/roboptim-core/
 * roboptim-core-git: https://aur.archlinux.org/packages/roboptim-core-git/
 * roboptim-plugin-ipopt-git: https://aur.archlinux.org/packages/roboptim-core-plugin-ipopt-git/
