@@ -23,5 +23,6 @@ A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 * roboptim-plugin-ipopt-git: https://aur.archlinux.org/packages/roboptim-core-plugin-ipopt-git/
 * roboptim-trajectory-git: unpublished
 * ros-core: https://aur.archlinux.org/packages/ros-core/
+* ros-groovy-xacro: https://aur.archlinux.org/packages/ros-groovy-xacro/
 * vim-gtk-hg: https://aur.archlinux.org/packages/vim-gtk-hg/
 * wsmp: https://aur.archlinux.org/packages/wsmp/
