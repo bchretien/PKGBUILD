@@ -23,6 +23,12 @@ A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 * roboptim-plugin-ipopt-git: https://aur.archlinux.org/packages/roboptim-core-plugin-ipopt-git/
 * roboptim-trajectory-git: unpublished
 * ros-core: https://aur.archlinux.org/packages/ros-core/
+* ros-groovy-household-objects-database-msgs: https://aur.archlinux.org/packages/ros-groovy-household-objects-database-msgs/
+* ros-groovy-manipulation-msgs: https://aur.archlinux.org/packages/ros-groovy-manipulation-msgs/
+* ros-groovy-moveit-msgs: https://aur.archlinux.org/packages/ros-groovy-moveit-msgs/
+* ros-groovy-object-recognition-msgs: https://aur.archlinux.org/packages/ros-groovy-object-recognition-msgs/
+* ros-groovy-octomap-msgs: https://aur.archlinux.org/packages/ros-groovy-octomap-msgs/
+* ros-groovy-shape-tools: https://aur.archlinux.org/packages/ros-groovy-shape-tools/
 * ros-groovy-xacro: https://aur.archlinux.org/packages/ros-groovy-xacro/
 * vim-gtk-hg: https://aur.archlinux.org/packages/vim-gtk-hg/
 * wsmp: https://aur.archlinux.org/packages/wsmp/
