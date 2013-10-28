@@ -4,10 +4,14 @@ PKGBUILD
 A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 
 * eigen3-hg: https://aur.archlinux.org/packages/eigen3-hg/
+* fcl: https://aur.archlinux.org/packages/fcl/
+* fcl-git: https://aur.archlinux.org/packages/fcl-git/
 * fusesmb: https://aur.archlinux.org/packages/fusesmb/
 * gsl-shell-git: https://aur.archlinux.org/packages/gsl-shell-git/
 * ipopt: https://aur.archlinux.org/packages/ipopt/
 * ipopt-svn: https://aur.archlinux.org/packages/ipopt-svn/
+* libccd: https://aur.archlinux.org/packages/libccd/
+* libccd-git: https://aur.archlinux.org/packages/libccd-git/
 * libcoinhsl: https://aur.archlinux.org/packages/libcoinhsl/
 * libhsl: https://aur.archlinux.org/packages/libhsl/
 * libpfm4: https://aur.archlinux.org/packages/libpfm4/
