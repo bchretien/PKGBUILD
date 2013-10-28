@@ -12,7 +12,7 @@ depends=('ros-groovy-actionlib-msgs' 'ros-groovy-geometry-msgs'
          'ros-groovy-message-runtime' 'ros-groovy-sensor-msgs'
          'ros-groovy-shape-msgs' 'ros-groovy-std-msgs')
 _dir=object_recognition_msgs
-source=("$_dir"::'git://github.com/wg-perception/object_recognition_msgs.git')
+source=("$_dir"::'git://github.com/wg-perception/object_recognition_msgs.git'#tag=${pkgver})
 md5sums=('SKIP')
 
 build() {

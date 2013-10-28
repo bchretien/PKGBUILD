@@ -14,7 +14,7 @@ depends=('ros-groovy-geometry-msgs'
          'ros-groovy-shape-msgs'
          'ros-groovy-std-msgs')
 _dir=household_objects_database_msgs
-source=("$_dir"::'git://github.com/ros-interactive-manipulation/household_objects_database_msgs.git'#branch=groovy-devel)
+source=("$_dir"::'git://github.com/ros-interactive-manipulation/household_objects_database_msgs.git'#tag=${pkgver})
 md5sums=('SKIP')
 
 build() {

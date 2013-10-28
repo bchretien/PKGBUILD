@@ -9,7 +9,7 @@ license=('BSD')
 makedepends=('cmake' 'ros-build-tools' 'ros-groovy-shape-msgs')
 depends=('ros-groovy-visualization-msgs')
 _dir=shape_tools
-source=("$_dir"::'git://github.com/ros-planning/shape_tools.git'#branch=master)
+source=("$_dir"::'git://github.com/ros-planning/shape_tools.git'#tag=${pkgver})
 md5sums=('SKIP')
 
 build() {

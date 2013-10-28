@@ -3,7 +3,7 @@ pkgdesc="ROS - ROS messages used by MoveIt."
 url='http://www.ros.org/'
 
 pkgname=ros-groovy-moveit-msgs
-pkgver=0.5.2
+pkgver=0.4.0
 arch=('i686' 'x86_64')
 pkgrel=1
 license=('BSD')
@@ -14,7 +14,7 @@ depends=('ros-groovy-message-runtime' 'ros-groovy-octomap-msgs'
          'ros-groovy-shape-msgs' 'ros-groovy-manipulation-msgs'
          'ros-groovy-object-recognition-msgs' 'ros-groovy-std-msgs')
 _dir=moveit_msgs
-source=("$_dir"::'git://github.com/ros-planning/moveit_msgs.git'#branch=groovy-devel)
+source=("$_dir"::'git://github.com/ros-planning/moveit_msgs.git'#tag=${pkgver})
 md5sums=('SKIP')
 
 build() {

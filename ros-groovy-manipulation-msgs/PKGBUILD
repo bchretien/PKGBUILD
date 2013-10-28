@@ -13,7 +13,7 @@ depends=('ros-groovy-actionlib-msgs' 'ros-groovy-geometry-msgs'
          'ros-groovy-message-runtime' 'ros-groovy-sensor-msgs'
          'ros-groovy-shape-msgs' 'ros-groovy-std-msgs')
 _dir=manipulation_msgs
-source=("$_dir"::'git://github.com/ros-interactive-manipulation/manipulation_msgs.git'#branch=groovy-devel)
+source=("$_dir"::'git://github.com/ros-interactive-manipulation/manipulation_msgs.git'#tag=${pkgver})
 md5sums=('SKIP')
 
 build() {

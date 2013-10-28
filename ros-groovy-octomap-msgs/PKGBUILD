@@ -2,7 +2,7 @@
 pkgdesc="ROS - ROS package to provide messages and serializations / conversion for the OctoMap library."
 url='http://www.ros.org/'
 pkgname=ros-groovy-octomap-msgs
-pkgver=0.3.1
+pkgver=0.2.9
 arch=('i686' 'x86_64')
 pkgrel=1
 license=('BSD')
@@ -11,7 +11,7 @@ depends=('ros-groovy-geometry-msgs'
          'ros-groovy-message-runtime'
          'ros-groovy-std-msgs')
 _dir=octomap_msgs
-source=("$_dir"::'git://github.com/OctoMap/octomap_msgs.git'#branch=groovy-devel)
+source=("$_dir"::'git://github.com/OctoMap/octomap_msgs.git'#tag=${pkgver})
 md5sums=('SKIP')
 
 build() {
