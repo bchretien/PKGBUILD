@@ -29,6 +29,7 @@ A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 * roboptim-trajectory-git: unpublished
 * ros-core: https://aur.archlinux.org/packages/ros-core/
 * ros-groovy-household-objects-database-msgs: https://aur.archlinux.org/packages/ros-groovy-household-objects-database-msgs/
+* ros-groovy-gazebo-msgs: https://aur.archlinux.org/packages/ros-groovy-gazebo-msgs/
 * ros-groovy-manipulation-msgs: https://aur.archlinux.org/packages/ros-groovy-manipulation-msgs/
 * ros-groovy-moveit-msgs: https://aur.archlinux.org/packages/ros-groovy-moveit-msgs/
 * ros-groovy-object-recognition-msgs: https://aur.archlinux.org/packages/ros-groovy-object-recognition-msgs/
