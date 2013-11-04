@@ -7,6 +7,7 @@ A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 * fcl: https://aur.archlinux.org/packages/fcl/
 * fcl-git: https://aur.archlinux.org/packages/fcl-git/
 * fusesmb: https://aur.archlinux.org/packages/fusesmb/
+* gazebo: https://aur.archlinux.org/packages/gazebo/
 * gsl-shell-git: https://aur.archlinux.org/packages/gsl-shell-git/
 * ipopt: https://aur.archlinux.org/packages/ipopt/
 * ipopt-svn: https://aur.archlinux.org/packages/ipopt-svn/
