@@ -35,6 +35,7 @@ A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 * ros-groovy-object-recognition-msgs: https://aur.archlinux.org/packages/ros-groovy-object-recognition-msgs/
 * ros-groovy-octomap-msgs: https://aur.archlinux.org/packages/ros-groovy-octomap-msgs/
 * ros-groovy-shape-tools: https://aur.archlinux.org/packages/ros-groovy-shape-tools/
+* ros-groovy-urdf-parser-py: https://aur.archlinux.org/packages/ros-groovy-urdf-parser-py/
 * ros-groovy-xacro: https://aur.archlinux.org/packages/ros-groovy-xacro/
 * vim-gtk-hg: https://aur.archlinux.org/packages/vim-gtk-hg/
 * wsmp: https://aur.archlinux.org/packages/wsmp/
