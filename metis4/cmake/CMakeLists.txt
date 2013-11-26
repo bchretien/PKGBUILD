@@ -3,7 +3,7 @@ project(METIS)
 
 set(SHARED TRUE CACHE BOOL "build a shared library")
 
-set(METIS_INSTALL_BIN FALSE)
+set(METIS_INSTALL_BIN TRUE)
 
 # Configure libmetis library.
 if(SHARED)
