@@ -1,0 +1,57 @@
+# Maintainer: Aris Synodinos <arissynod-gmail-com>
+pkgname=urdfdom-git
+pkgver=1.2
+pkgrel=1
+pkgdesc="The URDF (U-Robot Description Format) library provides core data structures and a simple XML parsers for populating the class data structures from an URDF file"
+arch=('i686' 'x86_64')
+url="http://gazebosim.org/"
+license=('Apache')
+depends=( 'boost' 'tinyxml' 'console_bridge-git')
+provides=('urdfdom')
+conflicts=('urdfdom')
+makedepends=('git' 'cmake')
+md5sums=() #generate with 'makepkg -g'
+
+_gitroot=https://github.com/ros
+_gitrepo=urdfdom
+
+pkgver() {
+  cd "$srcdir/$_gitrepo"
+  # Use the tag of the last commit
+  local ver="$(git describe --long)"
+  printf "%s" "${ver//-/.}"
+}
+
+build() {
+  cd "${srcdir}"
+  msg "Connecting to Git server...."
+
+  if [[ -d "$_gitrepo" ]]; then
+    cd "$_gitrepo"
+    #git pull
+    #msg "The local files are updated."
+  else
+    git clone $_gitroot/$_gitrepo.git -b robot_model-1.2
+  fi
+
+  msg "Mercurial checkout done or server timeout"
+  msg "Starting build..."
+
+  rm -rf "$srcdir/$_gitrepo-build"
+  cp -r "$srcdir/$_gitrepo" "$srcdir/$_gitrepo-build"
+  cd "$srcdir/$_gitrepo-build"
+
+  #
+  # BUILD HERE
+  #
+  mkdir "$srcdir/$_gitrepo-build"/build
+  cd "$srcdir/$_gitrepo-build"/build
+  cmake .. -DCMAKE_INSTALL_PREFIX="/usr"
+
+  make
+}
+
+package() {
+  cd "$srcdir/$_gitrepo-build/build"
+  make DESTDIR="$pkgdir/" install
+}
