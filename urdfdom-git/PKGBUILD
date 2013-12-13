@@ -1,6 +1,6 @@
 # Maintainer: Aris Synodinos <arissynod-gmail-com>
 pkgname=urdfdom-git
-pkgver=1.2
+pkgver=0.2.9
 pkgrel=1
 pkgdesc="The URDF (U-Robot Description Format) library provides core data structures and a simple XML parsers for populating the class data structures from an URDF file"
 arch=('i686' 'x86_64')
@@ -31,7 +31,9 @@ build() {
     #git pull
     #msg "The local files are updated."
   else
-    git clone $_gitroot/$_gitrepo.git -b robot_model-1.2
+    git clone $_gitroot/$_gitrepo.git
+    cd $_gitrepo
+    git checkout tags/0.2.9
   fi
 
   msg "Mercurial checkout done or server timeout"
