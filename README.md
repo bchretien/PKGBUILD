@@ -3,6 +3,7 @@ PKGBUILD
 
 A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 
+* cpp-coveralls: https://aur.archlinux.org/packages/cpp-coveralls/
 * eigen3-hg: https://aur.archlinux.org/packages/eigen3-hg/
 * fcl: https://aur.archlinux.org/packages/fcl/
 * fcl-git: https://aur.archlinux.org/packages/fcl-git/
