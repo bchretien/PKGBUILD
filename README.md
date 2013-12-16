@@ -35,6 +35,8 @@ A list of PKGBUILDs I maintain or contribute to for Arch Linux (AUR).
 * ros-groovy-moveit-msgs: https://aur.archlinux.org/packages/ros-groovy-moveit-msgs/
 * ros-groovy-object-recognition-msgs: https://aur.archlinux.org/packages/ros-groovy-object-recognition-msgs/
 * ros-groovy-octomap-msgs: https://aur.archlinux.org/packages/ros-groovy-octomap-msgs/
+* ros-groovy-rcpdf: https://aur.archlinux.org/packages/ros-groovy-rcpdf/
+* ros-groovy-rcpdf-interface: https://aur.archlinux.org/packages/ros-groovy-rcpdf-interface/
 * ros-groovy-rqt-console: https://aur.archlinux.org/packages/ros-groovy-rqt-console/
 * ros-groovy-rqt-logger-level: https://aur.archlinux.org/packages/ros-groovy-rqt-logger-level/
 * ros-groovy-rqt-plot: https://aur.archlinux.org/packages/ros-groovy-rqt-plot/
