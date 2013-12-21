@@ -1,21 +1,27 @@
 #Maintainer: Benjamin Chretien <chretien at lirmm dot fr>
-pkgdesc="ROS - Message and service data structures for interacting with Gazebo from ROS."
+pkgdesc="ROS - Provides ROS plugins that offer message and service publishers for interfacing with Gazebo."
 url='http://www.ros.org/'
 
-pkgname=ros-groovy-gazebo-msgs
+pkgname=ros-groovy-gazebo-ros
 pkgver=2.4.0
 arch=('i686' 'x86_64')
 pkgrel=1
 license=('BSD')
 makedepends=('cmake' 'ros-build-tools')
 depends=('gazebo'
+         'ros-groovy-cmake-modules'
+         'ros-groovy-dynamic-reconfigure'
+         'ros-groovy-gazebo-msgs'
+         'ros-groovy-gazebo-plugins'
          'ros-groovy-geometry-msgs'
          'ros-groovy-message-generation'
-         'ros-groovy-message-runtime'
-         'ros-groovy-sensor-msgs'
+         'ros-groovy-rosgraph-msgs'
+         'ros-groovy-roscpp'
+         'ros-groovy-roslib'
          'ros-groovy-std-msgs'
          'ros-groovy-std-srvs'
-         'ros-groovy-trajectory-msgs')
+         'ros-groovy-tf'
+         'tinyxml')
 md5sums=('SKIP')
 
 _name=gazebo_ros_pkgs
@@ -23,7 +29,7 @@ _dir=${_name}
 source=("$_dir"::"git://github.com/ros-simulation/${_name}.git"#tag=${pkgver})
 
 # Subdirectory that will be installed
-_subdir="gazebo_msgs"
+_subdir="gazebo_ros"
 
 build() {
     mkdir -p "${srcdir}/build/${_subdir}"
