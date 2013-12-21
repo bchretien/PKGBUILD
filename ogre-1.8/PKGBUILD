@@ -53,10 +53,10 @@ package() {
   make DESTDIR=${pkgdir} install
 
   # rename pkg-config files
-  for files in ${pkgdir}/opt/${_dir}/lib/pkgconfig/*.pc
-  do
-    mv "$files" "${files%.pc}-1.8.pc"
-  done
+  #for files in ${pkgdir}/opt/${_dir}/lib/pkgconfig/*.pc
+  #do
+  #  mv "$files" "${files%.pc}-1.8.pc"
+  #done
 
   # fix up samples
   #install -dm775 -o root -g users ${pkgdir}/opt/${_dir}/samples/
