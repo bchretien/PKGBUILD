@@ -1,39 +1,36 @@
 #Maintainer: Benjamin Chretien <chretien at lirmm dot fr>
-pkgdesc="ROS - Components of MoveIt! that offer visualization."
+pkgdesc="ROS - Components of MoveIt! that offer simpler interfaces to planning and execution."
 url='http://www.ros.org/'
 
-pkgname=ros-groovy-moveit-ros-visualization
+pkgname=ros-groovy-moveit-ros-planning-interface
 pkgver=0.4.6
 arch=('i686' 'x86_64')
 pkgrel=1
 license=('BSD')
 makedepends=('ros-build-tools' 'cmake')
-depends=('ogre-1.8'
-         'ros-groovy-geometric-shapes'
-         'ros-groovy-interactive-markers'
-         'ros-groovy-moveit-ros-planning-interface'
+depends=('python2'
+         'ros-groovy-actionlib'
+         'ros-groovy-eigen-conversions'
+         'ros-groovy-moveit-ros-manipulation'
+         'ros-groovy-moveit-ros-move-group'
+         'ros-groovy-moveit-ros-planning'
          'ros-groovy-moveit-ros-warehouse'
-         'ros-groovy-moveit-ros-robot-interaction'
-         'ros-groovy-pluginlib'
+         'ros-groovy-rosconsole'
          'ros-groovy-roscpp'
-         'ros-groovy-rviz')
+         'ros-groovy-rospy'
+         'ros-groovy-tf'
+         'ros-groovy-tf-conversions')
 _dir=moveit_ros
-_subdir=visualization
+_subdir=planning_interface
 source=("$_dir"::'git://github.com/ros-planning/moveit_ros.git'#branch=groovy-devel)
 md5sums=('SKIP')
 
 
 build() {
     [ -f /opt/ros/groovy/setup.bash ] && source /opt/ros/groovy/setup.bash
-
     [ -d ${srcdir}/build ] || mkdir ${srcdir}/build
     cd ${srcdir}/build
-
     /usr/share/ros-build-tools/fix-python-scripts.sh ${srcdir}/${_dir}/${_subdir}
-
-    # Adapt paths for Ogre 1.8
-    export PKG_CONFIG_PATH="/opt/OGRE-1.8/lib/pkgconfig:$PKG_CONFIG_PATH"
-
     cmake ${srcdir}/${_dir}/${_subdir} \
         -DCATKIN_BUILD_BINARY_PACKAGE=ON \
         -DCMAKE_INSTALL_PREFIX=/opt/ros/groovy \
