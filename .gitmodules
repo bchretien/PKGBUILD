@@ -1,0 +1,3 @@
+[submodule "arch-ros-stacks"]
+	path = arch-ros-stacks
+	url = https://github.com/bchretien/arch-ros-stacks
