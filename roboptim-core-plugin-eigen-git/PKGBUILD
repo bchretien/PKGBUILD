@@ -1,20 +1,18 @@
 # Maintainer: Benjamin Chretien <chretien at lirmm dot fr>
-pkgname=roboptim-core-git
-pkgver=2.0.r266.g3dae58c
+pkgname=roboptim-core-plugin-eigen-git
+pkgver=0.1.r0.g0956b6e
 pkgrel=1
-pkgdesc="Numerical Optimization for Robotics"
+pkgdesc="Eigen NonLinearOptimization interface for RobOptim Core."
 arch=('i686' 'x86_64')
 url="http://roboptim.net/"
 license=('(L)GPL2')
-depends=('eigen3' 'boost>=1.41' 'libltdl' 'log4cxx>=0.10')
+depends=('eigen3' 'boost>=1.41' 'libltdl' 'log4cxx>=0.10' 'roboptim-core-git')
 optdepends=()
 makedepends=('git' 'cmake' 'doxygen')
-provides=('roboptim-core')
-conflicts=('roboptim-core')
 
 # Repository location
-_gitroot="git://github.com/roboptim/roboptim-core.git"
-_gitname="roboptim-core"
+_gitroot="git://github.com/roboptim/roboptim-core-plugin-eigen.git"
+_gitname="roboptim-core-plugin-eigen"
 
 source=("${_gitname}"::${_gitroot})
 md5sums=('SKIP')
