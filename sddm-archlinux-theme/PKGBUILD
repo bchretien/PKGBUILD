@@ -1,7 +1,7 @@
 _pkgname=sddm-archlinux-theme
 pkgname=$_pkgname-git
 pkgver=r11.8898d77
-pkgrel=1
+pkgrel=2
 pkgdesc="Archlinux Theme for SDDM"
 license=('GPL')
 arch=('i686' 'x86_64')
