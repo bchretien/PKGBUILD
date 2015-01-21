@@ -17,7 +17,7 @@ license=('custom:vim')
 url="http://www.vim.org"
 depends=("vim-runtime=${pkgver}-${pkgrel}" 'gpm' 'ruby' 'libxt' 'desktop-file-utils' 'gtk2' 'lua' 'python2' 'perl')
 makedepends=('gpm' 'python2' 'python' 'ruby' 'libxt' 'desktop-file-utils' 'gtk2' 'lua' 'mercurial')
-provides=("vim=${pkgver}-${pkgrel}")
+provides=("vim=${pkgver}-${pkgrel}" "gvim=${pkgver}-${pkgrel}")
 conflicts=('vim-minimal' 'vim' 'vim-python3' 'gvim-python3')
 install=gvim.install
 # It would be great to use downloadable archives https://vim.googlecode.com/archive/$tag.tar.gz
