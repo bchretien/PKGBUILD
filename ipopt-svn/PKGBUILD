@@ -25,7 +25,7 @@ _has_hsl=1
 pkgver() {
     cd "$srcdir/Ipopt-svn"
     local date_regex="[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\} releases\/"
-    local last_rel="$(sed -ne "1,/${date_regex}/s/${date_regex}\([0-9.]\+\)/\1/p" ChangeLog)"
+    local last_rel="$(sed -ne "1,/${date_regex}/s/${date_regex}\([0-9.]\+\).*/\1/p" ChangeLog)"
     local ver="$(svnversion)"
     msg "Last release: ${last_rel}"
     printf "%s.r%s" "$last_rel" "${ver//[[:alpha:]]}"
