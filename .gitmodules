@@ -1,3 +1,6 @@
 [submodule "arch-ros-stacks"]
 	path = arch-ros-stacks
 	url = https://github.com/bchretien/arch-ros-stacks
+[submodule "rofi"]
+	path = rofi
+	url = ssh://aur@aur4.archlinux.org/rofi.git
