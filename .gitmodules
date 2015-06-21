@@ -22,3 +22,6 @@
 [submodule "gazebo"]
 	path = gazebo
 	url = ssh+git://aur@aur4.archlinux.org:22/gazebo.git/
+[submodule "sdformat"]
+	path = sdformat
+	url = ssh+git://aur@aur4.archlinux.org:22/sdformat.git/
