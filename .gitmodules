@@ -164,3 +164,6 @@
 [submodule "python2-yep"]
 	path = python2-yep
 	url = ssh+git://aur@aur4.archlinux.org:22/python2-yep.git
+[submodule "python2-jsonpickle"]
+	path = python2-jsonpickle
+	url = ssh+git://aur@aur4.archlinux.org:22/python2-jsonpickle.git
