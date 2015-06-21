@@ -73,3 +73,6 @@
 [submodule "sensorkinect"]
 	path = sensorkinect
 	url = ssh+git://aur@aur4.archlinux.org:22/sensorkinect.git
+[submodule "choreonoid"]
+	path = choreonoid
+	url = ssh+git://aur@aur4.archlinux.org:22/choreonoid.git
