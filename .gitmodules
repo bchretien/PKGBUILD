@@ -119,3 +119,6 @@
 [submodule "cpp-coveralls"]
 	path = cpp-coveralls
 	url = ssh+git://aur@aur4.archlinux.org:22/cpp-coveralls.git
+[submodule "cpplog-git"]
+	path = cpplog-git
+	url = ssh+git://aur@aur4.archlinux.org:22/cpplog-git.git
