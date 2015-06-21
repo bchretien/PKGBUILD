@@ -191,3 +191,6 @@
 [submodule "ttf-pizzadude-bullets"]
 	path = ttf-pizzadude-bullets
 	url = ssh+git://aur@aur4.archlinux.org:22/ttf-pizzadude-bullets.git
+[submodule "ttf-digital-7"]
+	path = ttf-digital-7
+	url = ssh+git://aur@aur4.archlinux.org:22/ttf-digital-7.git
