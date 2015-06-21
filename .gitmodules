@@ -161,3 +161,6 @@
 [submodule "python2-pprofile"]
 	path = python2-pprofile
 	url = ssh+git://aur@aur4.archlinux.org:22/python2-pprofile.git
+[submodule "python2-yep"]
+	path = python2-yep
+	url = ssh+git://aur@aur4.archlinux.org:22/python2-yep.git
