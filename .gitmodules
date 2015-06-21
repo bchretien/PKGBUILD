@@ -125,3 +125,6 @@
 [submodule "cub"]
 	path = cub
 	url = ssh+git://aur@aur4.archlinux.org:22/cub.git
+[submodule "fcl"]
+	path = fcl
+	url = ssh+git://aur@aur4.archlinux.org:22/fcl.git
