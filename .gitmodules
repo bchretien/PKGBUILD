@@ -134,3 +134,6 @@
 [submodule "fusesmb"]
 	path = fusesmb
 	url = ssh+git://aur@aur4.archlinux.org:22/fusesmb.git
+[submodule "libccd"]
+	path = libccd
+	url = ssh+git://aur@aur4.archlinux.org:22/libccd.git
