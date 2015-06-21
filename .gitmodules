@@ -215,3 +215,6 @@
 [submodule "nodejs-termcolors"]
 	path = nodejs-termcolors
 	url = ssh+git://aur@aur4.archlinux.org:22/nodejs-termcolors.git
+[submodule "python-pprofile"]
+	path = python-pprofile
+	url = ssh+git://aur@aur4.archlinux.org:22/python-pprofile.git
