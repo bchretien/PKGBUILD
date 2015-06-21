@@ -218,3 +218,6 @@
 [submodule "python-pprofile"]
 	path = python-pprofile
 	url = ssh+git://aur@aur4.archlinux.org:22/python-pprofile.git
+[submodule "gazebo-hg"]
+	path = gazebo-hg
+	url = ssh+git://aur@aur4.archlinux.org:22/gazebo-hg.git
