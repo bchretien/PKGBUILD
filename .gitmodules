@@ -37,3 +37,6 @@
 [submodule "urdfdom"]
 	path = urdfdom
 	url = ssh+git://aur@aur4.archlinux.org:22/urdfdom.git
+[submodule "simbody"]
+	path = simbody
+	url = ssh+git://aur@aur4.archlinux.org:22/simbody.git
