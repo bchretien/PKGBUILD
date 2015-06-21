@@ -13,3 +13,6 @@
 [submodule "rofi-git"]
 	path = rofi-git
 	url = ssh+git://aur@aur4.archlinux.org:22/rofi-git.git/
+[submodule "screenkey"]
+	path = screenkey
+	url = ssh+git://aur@aur4.archlinux.org:22/screenkey.git/
