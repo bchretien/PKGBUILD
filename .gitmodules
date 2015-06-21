@@ -7,3 +7,6 @@
 [submodule "cuda-z"]
 	path = cuda-z
 	url = ssh+git://aur@aur4.archlinux.org:22/cuda-z.git/
+[submodule "eigen3-hg"]
+	path = eigen3-hg
+	url = ssh+git://aur@aur4.archlinux.org:22/eigen3-hg.git/
