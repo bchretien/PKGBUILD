@@ -122,3 +122,6 @@
 [submodule "cpplog-git"]
 	path = cpplog-git
 	url = ssh+git://aur@aur4.archlinux.org:22/cpplog-git.git
+[submodule "cub"]
+	path = cub
+	url = ssh+git://aur@aur4.archlinux.org:22/cub.git
