@@ -212,3 +212,6 @@
 [submodule "nodejs-svgo"]
 	path = nodejs-svgo
 	url = ssh+git://aur@aur4.archlinux.org:22/nodejs-svgo.git
+[submodule "nodejs-termcolors"]
+	path = nodejs-termcolors
+	url = ssh+git://aur@aur4.archlinux.org:22/nodejs-termcolors.git
