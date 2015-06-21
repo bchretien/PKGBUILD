@@ -110,3 +110,6 @@
 [submodule "coin-or-qpoases"]
 	path = coin-or-qpoases
 	url = ssh+git://aur@aur4.archlinux.org:22/coin-or-qpoases.git
+[submodule "console-bridge"]
+	path = console-bridge
+	url = ssh+git://aur@aur4.archlinux.org:22/console-bridge.git
