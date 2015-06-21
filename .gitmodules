@@ -61,3 +61,6 @@
 [submodule "roboptim-core-plugin-eigen-git"]
 	path = roboptim-core-plugin-eigen-git
 	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-plugin-eigen-git.git
+[submodule "roboptim-core-plugin-cminpack-git"]
+	path = roboptim-core-plugin-cminpack-git
+	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-plugin-cminpack-git.git
