@@ -46,3 +46,6 @@
 [submodule "roboptim-core"]
 	path = roboptim-core
 	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core.git
+[submodule "cppclean"]
+	path = cppclean
+	url = ssh+git://aur@aur4.archlinux.org:22/cppclean.git
