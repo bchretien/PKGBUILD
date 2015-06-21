@@ -88,3 +88,6 @@
 [submodule "python2-pybindgen"]
 	path = python2-pybindgen
 	url = ssh+git://aur@aur4.archlinux.org:22/python2-pybindgen.git
+[submodule "openni"]
+	path = openni
+	url = ssh+git://aur@aur4.archlinux.org:22/openni.git
