@@ -28,3 +28,6 @@
 [submodule "pagmo-git"]
 	path = pagmo-git
 	url = ssh+git://aur@aur4.archlinux.org:22/pagmo-git.git/
+[submodule "urdfdom-headers"]
+	path = urdfdom-headers
+	url = ssh+git://aur@aur4.archlinux.org:22/urdfdom-headers.git/
