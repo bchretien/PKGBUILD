@@ -67,3 +67,6 @@
 [submodule "roboptim-core-python-git"]
 	path = roboptim-core-python-git
 	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-python-git.git
+[submodule "roboptim-trajectory-git"]
+	path = roboptim-trajectory-git
+	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-trajectory-git.git
