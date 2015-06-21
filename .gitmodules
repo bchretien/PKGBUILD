@@ -100,3 +100,7 @@
 [submodule "python-pybindgen"]
 	path = python-pybindgen
 	url = ssh+git://aur@aur4.archlinux.org:22/python-pybindgen.git
+[submodule "ogre-1.8"]
+	path = ogre-1.8
+	url = ssh+git://aur@aur4.archlinux.org:22/ogre-1.8.git
+	branch = master
