@@ -19,3 +19,6 @@
 [submodule "screenkey-git"]
 	path = screenkey-git
 	url = ssh+git://aur@aur4.archlinux.org:22/screenkey-git.git/
+[submodule "gazebo"]
+	path = gazebo
+	url = ssh+git://aur@aur4.archlinux.org:22/gazebo.git/
