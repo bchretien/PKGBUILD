@@ -91,3 +91,6 @@
 [submodule "openni"]
 	path = openni
 	url = ssh+git://aur@aur4.archlinux.org:22/openni.git
+[submodule "rbdl-hg"]
+	path = rbdl-hg
+	url = ssh+git://aur@aur4.archlinux.org:22/rbdl-hg.git
