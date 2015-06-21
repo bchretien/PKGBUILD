@@ -82,3 +82,6 @@
 [submodule "eigen3topython-git"]
 	path = eigen3topython-git
 	url = ssh+git://aur@aur4.archlinux.org:22/eigen3topython-git.git
+[submodule "rbdyn-git"]
+	path = rbdyn-git
+	url = ssh+git://aur@aur4.archlinux.org:22/rbdyn-git.git
