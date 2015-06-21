@@ -94,3 +94,6 @@
 [submodule "rbdl-hg"]
 	path = rbdl-hg
 	url = ssh+git://aur@aur4.archlinux.org:22/rbdl-hg.git
+[submodule "python-cheat"]
+	path = python-cheat
+	url = ssh+git://aur@aur4.archlinux.org:22/python-cheat.git
