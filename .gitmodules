@@ -85,3 +85,6 @@
 [submodule "rbdyn-git"]
 	path = rbdyn-git
 	url = ssh+git://aur@aur4.archlinux.org:22/rbdyn-git.git
+[submodule "python2-pybindgen"]
+	path = python2-pybindgen
+	url = ssh+git://aur@aur4.archlinux.org:22/python2-pybindgen.git
