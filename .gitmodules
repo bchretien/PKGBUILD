@@ -155,3 +155,6 @@
 [submodule "python2-mpldatacursor-git"]
 	path = python2-mpldatacursor-git
 	url = ssh+git://aur@aur4.archlinux.org:22/python2-mpldatacursor-git.git
+[submodule "python2-memprof"]
+	path = python2-memprof
+	url = ssh+git://aur@aur4.archlinux.org:22/python2-memprof.git
