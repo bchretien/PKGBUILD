@@ -107,3 +107,6 @@
 [submodule "boost-compute"]
 	path = boost-compute
 	url = ssh+git://aur@aur4.archlinux.org:22/boost-compute.git
+[submodule "coin-or-qpoases"]
+	path = coin-or-qpoases
+	url = ssh+git://aur@aur4.archlinux.org:22/coin-or-qpoases.git
