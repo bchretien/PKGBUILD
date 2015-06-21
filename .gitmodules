@@ -185,3 +185,6 @@
 [submodule "python2-dill"]
 	path = python2-dill
 	url = ssh+git://aur@aur4.archlinux.org:22/python2-dill.git
+[submodule "libpfm4"]
+	path = libpfm4
+	url = ssh+git://aur@aur4.archlinux.org:22/libpfm4.git
