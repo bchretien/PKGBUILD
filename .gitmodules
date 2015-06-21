@@ -97,3 +97,6 @@
 [submodule "python-cheat"]
 	path = python-cheat
 	url = ssh+git://aur@aur4.archlinux.org:22/python-cheat.git
+[submodule "python-pybindgen"]
+	path = python-pybindgen
+	url = ssh+git://aur@aur4.archlinux.org:22/python-pybindgen.git
