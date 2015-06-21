@@ -25,3 +25,6 @@
 [submodule "sdformat"]
 	path = sdformat
 	url = ssh+git://aur@aur4.archlinux.org:22/sdformat.git/
+[submodule "pagmo-git"]
+	path = pagmo-git
+	url = ssh+git://aur@aur4.archlinux.org:22/pagmo-git.git/
