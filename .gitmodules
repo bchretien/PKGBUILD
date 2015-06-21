@@ -170,3 +170,6 @@
 [submodule "python2-flowui"]
 	path = python2-flowui
 	url = ssh+git://aur@aur4.archlinux.org:22/python2-flowui.git
+[submodule "python2-flowui-git"]
+	path = python2-flowui-git
+	url = ssh+git://aur@aur4.archlinux.org:22/python2-flowui-git.git
