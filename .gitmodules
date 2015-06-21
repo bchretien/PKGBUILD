@@ -182,3 +182,6 @@
 [submodule "python2-voidwalker-git"]
 	path = python2-voidwalker-git
 	url = ssh+git://aur@aur4.archlinux.org:22/python2-voidwalker-git.git
+[submodule "python2-dill"]
+	path = python2-dill
+	url = ssh+git://aur@aur4.archlinux.org:22/python2-dill.git
