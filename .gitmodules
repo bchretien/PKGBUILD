@@ -197,3 +197,6 @@
 [submodule "python-kitchen"]
 	path = python-kitchen
 	url = ssh+git://aur@aur4.archlinux.org:22/python-kitchen.git
+[submodule "pygccxml"]
+	path = pygccxml
+	url = ssh+git://aur@aur4.archlinux.org:22/pygccxml.git
