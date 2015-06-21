@@ -209,3 +209,6 @@
 [submodule "openvisualtraceroute"]
 	path = openvisualtraceroute
 	url = ssh+git://aur@aur4.archlinux.org:22/openvisualtraceroute.git
+[submodule "nodejs-svgo"]
+	path = nodejs-svgo
+	url = ssh+git://aur@aur4.archlinux.org:22/nodejs-svgo.git
