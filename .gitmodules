@@ -188,3 +188,6 @@
 [submodule "libpfm4"]
 	path = libpfm4
 	url = ssh+git://aur@aur4.archlinux.org:22/libpfm4.git
+[submodule "ttf-pizzadude-bullets"]
+	path = ttf-pizzadude-bullets
+	url = ssh+git://aur@aur4.archlinux.org:22/ttf-pizzadude-bullets.git
