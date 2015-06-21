@@ -31,3 +31,6 @@
 [submodule "urdfdom-headers"]
 	path = urdfdom-headers
 	url = ssh+git://aur@aur4.archlinux.org:22/urdfdom-headers.git/
+[submodule "sddm-futuristic-theme"]
+	path = sddm-futuristic-theme
+	url = ssh+git://aur@aur4.archlinux.org:22/sddm-futuristic-theme.git/
