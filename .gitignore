@@ -1,5 +1,9 @@
-*/*.pkg.tar.xz
-*/*.src.tar.gz
-*/src/*
-*/pkg/*
-metis4/cmake.tar.gz
+*/src/
+*/pkg/
+*.pkg.tar.xz
+*.tar.bz2
+*.tar.gz
+*/**
+!*/PKGBUILD
+!*/*.patch
+!*/*.install
