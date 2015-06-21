@@ -167,3 +167,6 @@
 [submodule "python2-jsonpickle"]
 	path = python2-jsonpickle
 	url = ssh+git://aur@aur4.archlinux.org:22/python2-jsonpickle.git
+[submodule "python2-flowui"]
+	path = python2-flowui
+	url = ssh+git://aur@aur4.archlinux.org:22/python2-flowui.git
