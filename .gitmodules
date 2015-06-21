@@ -200,3 +200,6 @@
 [submodule "pygccxml"]
 	path = pygccxml
 	url = ssh+git://aur@aur4.archlinux.org:22/pygccxml.git
+[submodule "py++"]
+	path = py++
+	url = ssh+git://aur@aur4.archlinux.org:22/py++.git
