@@ -58,3 +58,6 @@
 [submodule "roboptim-core-plugin-nlopt-git"]
 	path = roboptim-core-plugin-nlopt-git
 	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-plugin-nlopt-git.git
+[submodule "roboptim-core-plugin-eigen-git"]
+	path = roboptim-core-plugin-eigen-git
+	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-plugin-eigen-git.git
