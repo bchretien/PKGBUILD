@@ -55,3 +55,6 @@
 [submodule "roboptim-core-plugin-ipopt-git"]
 	path = roboptim-core-plugin-ipopt-git
 	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-plugin-ipopt-git.git
+[submodule "roboptim-core-plugin-nlopt-git"]
+	path = roboptim-core-plugin-nlopt-git
+	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-plugin-nlopt-git.git
