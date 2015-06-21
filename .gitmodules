@@ -137,3 +137,6 @@
 [submodule "libccd"]
 	path = libccd
 	url = ssh+git://aur@aur4.archlinux.org:22/libccd.git
+[submodule "libccd-git"]
+	path = libccd-git
+	url = ssh+git://aur@aur4.archlinux.org:22/libccd-git.git
