@@ -79,3 +79,6 @@
 [submodule "spacevecalg-git"]
 	path = spacevecalg-git
 	url = ssh+git://aur@aur4.archlinux.org:22/spacevecalg-git.git
+[submodule "eigen3topython-git"]
+	path = eigen3topython-git
+	url = ssh+git://aur@aur4.archlinux.org:22/eigen3topython-git.git
