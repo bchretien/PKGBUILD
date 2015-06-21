@@ -10,3 +10,6 @@
 [submodule "eigen3-hg"]
 	path = eigen3-hg
 	url = ssh+git://aur@aur4.archlinux.org:22/eigen3-hg.git/
+[submodule "rofi-git"]
+	path = rofi-git
+	url = ssh+git://aur@aur4.archlinux.org:22/rofi-git.git/
