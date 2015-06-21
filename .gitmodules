@@ -158,3 +158,6 @@
 [submodule "python2-memprof"]
 	path = python2-memprof
 	url = ssh+git://aur@aur4.archlinux.org:22/python2-memprof.git
+[submodule "python2-pprofile"]
+	path = python2-pprofile
+	url = ssh+git://aur@aur4.archlinux.org:22/python2-pprofile.git
