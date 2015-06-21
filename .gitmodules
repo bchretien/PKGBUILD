@@ -206,3 +206,6 @@
 [submodule "py++-svn"]
 	path = py++-svn
 	url = ssh+git://aur@aur4.archlinux.org:22/py++-svn.git
+[submodule "openvisualtraceroute"]
+	path = openvisualtraceroute
+	url = ssh+git://aur@aur4.archlinux.org:22/openvisualtraceroute.git
