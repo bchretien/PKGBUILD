@@ -40,3 +40,6 @@
 [submodule "simbody"]
 	path = simbody
 	url = ssh+git://aur@aur4.archlinux.org:22/simbody.git
+[submodule "libmocap-git"]
+	path = libmocap-git
+	url = ssh+git://aur@aur4.archlinux.org:22/libmocap-git.git
