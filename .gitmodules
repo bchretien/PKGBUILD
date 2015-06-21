@@ -194,3 +194,6 @@
 [submodule "ttf-digital-7"]
 	path = ttf-digital-7
 	url = ssh+git://aur@aur4.archlinux.org:22/ttf-digital-7.git
+[submodule "python-kitchen"]
+	path = python-kitchen
+	url = ssh+git://aur@aur4.archlinux.org:22/python-kitchen.git
