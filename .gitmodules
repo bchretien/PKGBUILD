@@ -176,3 +176,6 @@
 [submodule "python2-voidwalker"]
 	path = python2-voidwalker
 	url = ssh+git://aur@aur4.archlinux.org:22/python2-voidwalker.git
+[submodule "python2-pox"]
+	path = python2-pox
+	url = ssh+git://aur@aur4.archlinux.org:22/python2-pox.git
