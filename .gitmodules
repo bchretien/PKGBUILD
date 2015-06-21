@@ -76,3 +76,6 @@
 [submodule "choreonoid"]
 	path = choreonoid
 	url = ssh+git://aur@aur4.archlinux.org:22/choreonoid.git
+[submodule "spacevecalg-git"]
+	path = spacevecalg-git
+	url = ssh+git://aur@aur4.archlinux.org:22/spacevecalg-git.git
