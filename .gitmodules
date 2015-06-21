@@ -4,3 +4,6 @@
 [submodule "rofi"]
 	path = rofi
 	url = ssh://aur@aur4.archlinux.org/rofi.git
+[submodule "cuda-z"]
+	path = cuda-z
+	url = ssh+git://aur@aur4.archlinux.org:22/cuda-z.git/
