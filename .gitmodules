@@ -104,3 +104,6 @@
 	path = ogre-1.8
 	url = ssh+git://aur@aur4.archlinux.org:22/ogre-1.8.git
 	branch = master
+[submodule "boost-compute"]
+	path = boost-compute
+	url = ssh+git://aur@aur4.archlinux.org:22/boost-compute.git
