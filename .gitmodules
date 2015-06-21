@@ -146,3 +146,6 @@
 [submodule "metis4"]
 	path = metis4
 	url = ssh+git://aur@aur4.archlinux.org:22/metis4.git
+[submodule "metapod-git"]
+	path = metapod-git
+	url = ssh+git://aur@aur4.archlinux.org:22/metapod-git.git
