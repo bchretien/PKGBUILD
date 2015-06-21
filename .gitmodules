@@ -128,3 +128,6 @@
 [submodule "fcl"]
 	path = fcl
 	url = ssh+git://aur@aur4.archlinux.org:22/fcl.git
+[submodule "fcl-git"]
+	path = fcl-git
+	url = ssh+git://aur@aur4.archlinux.org:22/fcl-git.git
