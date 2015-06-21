@@ -113,3 +113,6 @@
 [submodule "console-bridge"]
 	path = console-bridge
 	url = ssh+git://aur@aur4.archlinux.org:22/console-bridge.git
+[submodule "coveralls-lcov"]
+	path = coveralls-lcov
+	url = ssh+git://aur@aur4.archlinux.org:22/coveralls-lcov.git
