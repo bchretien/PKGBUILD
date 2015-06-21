@@ -149,3 +149,6 @@
 [submodule "metapod-git"]
 	path = metapod-git
 	url = ssh+git://aur@aur4.archlinux.org:22/metapod-git.git
+[submodule "python2-mpldatacursor"]
+	path = python2-mpldatacursor
+	url = ssh+git://aur@aur4.archlinux.org:22/python2-mpldatacursor.git
