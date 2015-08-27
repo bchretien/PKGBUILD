@@ -221,3 +221,30 @@
 [submodule "gazebo-hg"]
 	path = gazebo-hg
 	url = ssh+git://aur@aur4.archlinux.org:22/gazebo-hg.git
+[submodule "python-language-check"]
+	path = python-language-check
+	url = ssh://aur@aur4.archlinux.org/python-language-check.git
+[submodule "openrtm-aist"]
+	path = openrtm-aist
+	url = https://aur4.archlinux.org/openrtm-aist.git/
+[submodule "openrtm-aist-python"]
+	path = openrtm-aist-python
+	url = https://aur4.archlinux.org/openrtm-aist-python.git/
+[submodule "python2-rtctree"]
+	path = python2-rtctree
+	url = ssh+git://aur4.archlinux.org/python2-rtctree.git
+[submodule "python2-rtshell"]
+	path = python2-rtshell
+	url = ssh+git://aur@aur4.archlinux.org/python2-rtshell.git/
+[submodule "omniorb416"]
+	path = omniorb416
+	url = https://aur4.archlinux.org/omniorb416.git
+[submodule "eclipse-rtmtools"]
+	path = eclipse-rtmtools
+	url = https://aur4.archlinux.org/eclipse-rtmtools.git/
+[submodule "python2-rtsprofile"]
+	path = python2-rtsprofile
+	url = ssh+git://aur@aur4.archlinux.org/python2-rtsprofile.git/
+[submodule "nodejs-doctoc"]
+	path = nodejs-doctoc
+	url = ssh+git://aur@aur4.archlinux.org/nodejs-doctoc.git
