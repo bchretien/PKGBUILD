@@ -251,3 +251,6 @@
 [submodule "nvidia-dkms"]
 	path = nvidia-dkms
 	url = https://aur.archlinux.org/nvidia-dkms.git
+[submodule "ignition-math"]
+	path = ignition-math
+	url = https://aur.archlinux.org/ignition-math.git
