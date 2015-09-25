@@ -3,248 +3,251 @@
 	url = https://github.com/bchretien/arch-ros-stacks
 [submodule "rofi"]
 	path = rofi
-	url = ssh://aur@aur4.archlinux.org/rofi.git
+	url = ssh://aur@aur.archlinux.org/rofi.git
 [submodule "cuda-z"]
 	path = cuda-z
-	url = ssh+git://aur@aur4.archlinux.org:22/cuda-z.git/
+	url = ssh+git://aur@aur.archlinux.org:22/cuda-z.git/
 [submodule "eigen3-hg"]
 	path = eigen3-hg
-	url = ssh+git://aur@aur4.archlinux.org:22/eigen3-hg.git/
+	url = ssh+git://aur@aur.archlinux.org:22/eigen3-hg.git/
 [submodule "rofi-git"]
 	path = rofi-git
-	url = ssh+git://aur@aur4.archlinux.org:22/rofi-git.git/
+	url = ssh+git://aur@aur.archlinux.org:22/rofi-git.git/
 [submodule "screenkey"]
 	path = screenkey
-	url = ssh+git://aur@aur4.archlinux.org:22/screenkey.git/
+	url = ssh+git://aur@aur.archlinux.org:22/screenkey.git/
 [submodule "screenkey-git"]
 	path = screenkey-git
-	url = ssh+git://aur@aur4.archlinux.org:22/screenkey-git.git/
+	url = ssh+git://aur@aur.archlinux.org:22/screenkey-git.git/
 [submodule "gazebo"]
 	path = gazebo
-	url = ssh+git://aur@aur4.archlinux.org:22/gazebo.git/
+	url = ssh+git://aur@aur.archlinux.org:22/gazebo.git/
 [submodule "sdformat"]
 	path = sdformat
-	url = ssh+git://aur@aur4.archlinux.org:22/sdformat.git/
+	url = ssh+git://aur@aur.archlinux.org:22/sdformat.git/
 [submodule "pagmo-git"]
 	path = pagmo-git
-	url = ssh+git://aur@aur4.archlinux.org:22/pagmo-git.git/
+	url = ssh+git://aur@aur.archlinux.org:22/pagmo-git.git/
 [submodule "urdfdom-headers"]
 	path = urdfdom-headers
-	url = ssh+git://aur@aur4.archlinux.org:22/urdfdom-headers.git/
+	url = ssh+git://aur@aur.archlinux.org:22/urdfdom-headers.git/
 [submodule "sddm-futuristic-theme"]
 	path = sddm-futuristic-theme
-	url = ssh+git://aur@aur4.archlinux.org:22/sddm-futuristic-theme.git/
+	url = ssh+git://aur@aur.archlinux.org:22/sddm-futuristic-theme.git/
 [submodule "urdfdom"]
 	path = urdfdom
-	url = ssh+git://aur@aur4.archlinux.org:22/urdfdom.git
+	url = ssh+git://aur@aur.archlinux.org:22/urdfdom.git
 [submodule "simbody"]
 	path = simbody
-	url = ssh+git://aur@aur4.archlinux.org:22/simbody.git
+	url = ssh+git://aur@aur.archlinux.org:22/simbody.git
 [submodule "libmocap-git"]
 	path = libmocap-git
-	url = ssh+git://aur@aur4.archlinux.org:22/libmocap-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/libmocap-git.git
 [submodule "roboptim-core"]
 	path = roboptim-core
-	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core.git
+	url = ssh+git://aur@aur.archlinux.org:22/roboptim-core.git
 [submodule "cppclean"]
 	path = cppclean
-	url = ssh+git://aur@aur4.archlinux.org:22/cppclean.git
+	url = ssh+git://aur@aur.archlinux.org:22/cppclean.git
 [submodule "roboptim-core-git"]
 	path = roboptim-core-git
-	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/roboptim-core-git.git
 [submodule "roboptim-core-plugin-ipopt-git"]
 	path = roboptim-core-plugin-ipopt-git
-	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-plugin-ipopt-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/roboptim-core-plugin-ipopt-git.git
 [submodule "roboptim-core-plugin-nlopt-git"]
 	path = roboptim-core-plugin-nlopt-git
-	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-plugin-nlopt-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/roboptim-core-plugin-nlopt-git.git
 [submodule "roboptim-core-plugin-eigen-git"]
 	path = roboptim-core-plugin-eigen-git
-	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-plugin-eigen-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/roboptim-core-plugin-eigen-git.git
 [submodule "roboptim-core-plugin-cminpack-git"]
 	path = roboptim-core-plugin-cminpack-git
-	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-plugin-cminpack-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/roboptim-core-plugin-cminpack-git.git
 [submodule "roboptim-core-python-git"]
 	path = roboptim-core-python-git
-	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-core-python-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/roboptim-core-python-git.git
 [submodule "roboptim-trajectory-git"]
 	path = roboptim-trajectory-git
-	url = ssh+git://aur@aur4.archlinux.org:22/roboptim-trajectory-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/roboptim-trajectory-git.git
 [submodule "sensorkinect"]
 	path = sensorkinect
-	url = ssh+git://aur@aur4.archlinux.org:22/sensorkinect.git
+	url = ssh+git://aur@aur.archlinux.org:22/sensorkinect.git
 [submodule "choreonoid"]
 	path = choreonoid
-	url = ssh+git://aur@aur4.archlinux.org:22/choreonoid.git
+	url = ssh+git://aur@aur.archlinux.org:22/choreonoid.git
 [submodule "spacevecalg-git"]
 	path = spacevecalg-git
-	url = ssh+git://aur@aur4.archlinux.org:22/spacevecalg-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/spacevecalg-git.git
 [submodule "eigen3topython-git"]
 	path = eigen3topython-git
-	url = ssh+git://aur@aur4.archlinux.org:22/eigen3topython-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/eigen3topython-git.git
 [submodule "rbdyn-git"]
 	path = rbdyn-git
-	url = ssh+git://aur@aur4.archlinux.org:22/rbdyn-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/rbdyn-git.git
 [submodule "python2-pybindgen"]
 	path = python2-pybindgen
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-pybindgen.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-pybindgen.git
 [submodule "openni"]
 	path = openni
-	url = ssh+git://aur@aur4.archlinux.org:22/openni.git
+	url = ssh+git://aur@aur.archlinux.org:22/openni.git
 [submodule "rbdl-hg"]
 	path = rbdl-hg
-	url = ssh+git://aur@aur4.archlinux.org:22/rbdl-hg.git
+	url = ssh+git://aur@aur.archlinux.org:22/rbdl-hg.git
 [submodule "python-cheat"]
 	path = python-cheat
-	url = ssh+git://aur@aur4.archlinux.org:22/python-cheat.git
+	url = ssh+git://aur@aur.archlinux.org:22/python-cheat.git
 [submodule "python-pybindgen"]
 	path = python-pybindgen
-	url = ssh+git://aur@aur4.archlinux.org:22/python-pybindgen.git
+	url = ssh+git://aur@aur.archlinux.org:22/python-pybindgen.git
 [submodule "ogre-1.8"]
 	path = ogre-1.8
-	url = ssh+git://aur@aur4.archlinux.org:22/ogre-1.8.git
+	url = ssh+git://aur@aur.archlinux.org:22/ogre-1.8.git
 	branch = master
 [submodule "boost-compute"]
 	path = boost-compute
-	url = ssh+git://aur@aur4.archlinux.org:22/boost-compute.git
+	url = ssh+git://aur@aur.archlinux.org:22/boost-compute.git
 [submodule "coin-or-qpoases"]
 	path = coin-or-qpoases
-	url = ssh+git://aur@aur4.archlinux.org:22/coin-or-qpoases.git
+	url = ssh+git://aur@aur.archlinux.org:22/coin-or-qpoases.git
 [submodule "console-bridge"]
 	path = console-bridge
-	url = ssh+git://aur@aur4.archlinux.org:22/console-bridge.git
+	url = ssh+git://aur@aur.archlinux.org:22/console-bridge.git
 [submodule "coveralls-lcov"]
 	path = coveralls-lcov
-	url = ssh+git://aur@aur4.archlinux.org:22/coveralls-lcov.git
+	url = ssh+git://aur@aur.archlinux.org:22/coveralls-lcov.git
 [submodule "cpp-coveralls"]
 	path = cpp-coveralls
-	url = ssh+git://aur@aur4.archlinux.org:22/cpp-coveralls.git
+	url = ssh+git://aur@aur.archlinux.org:22/cpp-coveralls.git
 [submodule "cpplog-git"]
 	path = cpplog-git
-	url = ssh+git://aur@aur4.archlinux.org:22/cpplog-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/cpplog-git.git
 [submodule "cub"]
 	path = cub
-	url = ssh+git://aur@aur4.archlinux.org:22/cub.git
+	url = ssh+git://aur@aur.archlinux.org:22/cub.git
 [submodule "fcl"]
 	path = fcl
-	url = ssh+git://aur@aur4.archlinux.org:22/fcl.git
+	url = ssh+git://aur@aur.archlinux.org:22/fcl.git
 [submodule "fcl-git"]
 	path = fcl-git
-	url = ssh+git://aur@aur4.archlinux.org:22/fcl-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/fcl-git.git
 [submodule "fusesmb"]
 	path = fusesmb
-	url = ssh+git://aur@aur4.archlinux.org:22/fusesmb.git
+	url = ssh+git://aur@aur.archlinux.org:22/fusesmb.git
 [submodule "libccd"]
 	path = libccd
-	url = ssh+git://aur@aur4.archlinux.org:22/libccd.git
+	url = ssh+git://aur@aur.archlinux.org:22/libccd.git
 [submodule "libccd-git"]
 	path = libccd-git
-	url = ssh+git://aur@aur4.archlinux.org:22/libccd-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/libccd-git.git
 [submodule "libdart"]
 	path = libdart
-	url = ssh+git://aur@aur4.archlinux.org:22/libdart.git
+	url = ssh+git://aur@aur.archlinux.org:22/libdart.git
 [submodule "metis4"]
 	path = metis4
-	url = ssh+git://aur@aur4.archlinux.org:22/metis4.git
+	url = ssh+git://aur@aur.archlinux.org:22/metis4.git
 [submodule "metapod-git"]
 	path = metapod-git
-	url = ssh+git://aur@aur4.archlinux.org:22/metapod-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/metapod-git.git
 [submodule "python2-mpldatacursor"]
 	path = python2-mpldatacursor
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-mpldatacursor.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-mpldatacursor.git
 [submodule "python2-mpldatacursor-git"]
 	path = python2-mpldatacursor-git
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-mpldatacursor-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-mpldatacursor-git.git
 [submodule "python2-memprof"]
 	path = python2-memprof
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-memprof.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-memprof.git
 [submodule "python2-pprofile"]
 	path = python2-pprofile
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-pprofile.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-pprofile.git
 [submodule "python2-yep"]
 	path = python2-yep
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-yep.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-yep.git
 [submodule "python2-jsonpickle"]
 	path = python2-jsonpickle
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-jsonpickle.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-jsonpickle.git
 [submodule "python2-flowui"]
 	path = python2-flowui
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-flowui.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-flowui.git
 [submodule "python2-flowui-git"]
 	path = python2-flowui-git
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-flowui-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-flowui-git.git
 [submodule "python2-voidwalker"]
 	path = python2-voidwalker
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-voidwalker.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-voidwalker.git
 [submodule "python2-pox"]
 	path = python2-pox
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-pox.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-pox.git
 [submodule "python2-voidwalker-git"]
 	path = python2-voidwalker-git
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-voidwalker-git.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-voidwalker-git.git
 [submodule "python2-dill"]
 	path = python2-dill
-	url = ssh+git://aur@aur4.archlinux.org:22/python2-dill.git
+	url = ssh+git://aur@aur.archlinux.org:22/python2-dill.git
 [submodule "libpfm4"]
 	path = libpfm4
-	url = ssh+git://aur@aur4.archlinux.org:22/libpfm4.git
+	url = ssh+git://aur@aur.archlinux.org:22/libpfm4.git
 [submodule "ttf-pizzadude-bullets"]
 	path = ttf-pizzadude-bullets
-	url = ssh+git://aur@aur4.archlinux.org:22/ttf-pizzadude-bullets.git
+	url = ssh+git://aur@aur.archlinux.org:22/ttf-pizzadude-bullets.git
 [submodule "ttf-digital-7"]
 	path = ttf-digital-7
-	url = ssh+git://aur@aur4.archlinux.org:22/ttf-digital-7.git
+	url = ssh+git://aur@aur.archlinux.org:22/ttf-digital-7.git
 [submodule "python-kitchen"]
 	path = python-kitchen
-	url = ssh+git://aur@aur4.archlinux.org:22/python-kitchen.git
+	url = ssh+git://aur@aur.archlinux.org:22/python-kitchen.git
 [submodule "pygccxml"]
 	path = pygccxml
-	url = ssh+git://aur@aur4.archlinux.org:22/pygccxml.git
+	url = ssh+git://aur@aur.archlinux.org:22/pygccxml.git
 [submodule "py++"]
 	path = py++
-	url = ssh+git://aur@aur4.archlinux.org:22/py++.git
+	url = ssh+git://aur@aur.archlinux.org:22/py++.git
 [submodule "py++-svn"]
 	path = py++-svn
-	url = ssh+git://aur@aur4.archlinux.org:22/py++-svn.git
+	url = ssh+git://aur@aur.archlinux.org:22/py++-svn.git
 [submodule "openvisualtraceroute"]
 	path = openvisualtraceroute
-	url = ssh+git://aur@aur4.archlinux.org:22/openvisualtraceroute.git
+	url = ssh+git://aur@aur.archlinux.org:22/openvisualtraceroute.git
 [submodule "nodejs-svgo"]
 	path = nodejs-svgo
-	url = ssh+git://aur@aur4.archlinux.org:22/nodejs-svgo.git
+	url = ssh+git://aur@aur.archlinux.org:22/nodejs-svgo.git
 [submodule "nodejs-termcolors"]
 	path = nodejs-termcolors
-	url = ssh+git://aur@aur4.archlinux.org:22/nodejs-termcolors.git
+	url = ssh+git://aur@aur.archlinux.org:22/nodejs-termcolors.git
 [submodule "python-pprofile"]
 	path = python-pprofile
-	url = ssh+git://aur@aur4.archlinux.org:22/python-pprofile.git
+	url = ssh+git://aur@aur.archlinux.org:22/python-pprofile.git
 [submodule "gazebo-hg"]
 	path = gazebo-hg
-	url = ssh+git://aur@aur4.archlinux.org:22/gazebo-hg.git
+	url = ssh+git://aur@aur.archlinux.org:22/gazebo-hg.git
 [submodule "python-language-check"]
 	path = python-language-check
-	url = ssh://aur@aur4.archlinux.org/python-language-check.git
+	url = ssh://aur@aur.archlinux.org/python-language-check.git
 [submodule "openrtm-aist"]
 	path = openrtm-aist
-	url = https://aur4.archlinux.org/openrtm-aist.git/
+	url = https://aur.archlinux.org/openrtm-aist.git/
 [submodule "openrtm-aist-python"]
 	path = openrtm-aist-python
-	url = https://aur4.archlinux.org/openrtm-aist-python.git/
+	url = https://aur.archlinux.org/openrtm-aist-python.git/
 [submodule "python2-rtctree"]
 	path = python2-rtctree
-	url = ssh+git://aur4.archlinux.org/python2-rtctree.git
+	url = ssh+git://aur.archlinux.org/python2-rtctree.git
 [submodule "python2-rtshell"]
 	path = python2-rtshell
-	url = ssh+git://aur@aur4.archlinux.org/python2-rtshell.git/
+	url = ssh+git://aur@aur.archlinux.org/python2-rtshell.git/
 [submodule "omniorb416"]
 	path = omniorb416
-	url = https://aur4.archlinux.org/omniorb416.git
+	url = https://aur.archlinux.org/omniorb416.git
 [submodule "eclipse-rtmtools"]
 	path = eclipse-rtmtools
-	url = https://aur4.archlinux.org/eclipse-rtmtools.git/
+	url = https://aur.archlinux.org/eclipse-rtmtools.git/
 [submodule "python2-rtsprofile"]
 	path = python2-rtsprofile
-	url = ssh+git://aur@aur4.archlinux.org/python2-rtsprofile.git/
+	url = ssh+git://aur@aur.archlinux.org/python2-rtsprofile.git/
 [submodule "nodejs-doctoc"]
 	path = nodejs-doctoc
-	url = ssh+git://aur@aur4.archlinux.org/nodejs-doctoc.git
+	url = ssh+git://aur@aur.archlinux.org/nodejs-doctoc.git
+[submodule "nvidia-dkms"]
+	path = nvidia-dkms
+	url = https://aur.archlinux.org/nvidia-dkms.git
