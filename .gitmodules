@@ -194,9 +194,6 @@
 [submodule "ttf-digital-7"]
 	path = ttf-digital-7
 	url = ssh+git://aur@aur.archlinux.org:22/ttf-digital-7.git
-[submodule "python-kitchen"]
-	path = python-kitchen
-	url = ssh+git://aur@aur.archlinux.org:22/python-kitchen.git
 [submodule "pygccxml"]
 	path = pygccxml
 	url = ssh+git://aur@aur.archlinux.org:22/pygccxml.git
@@ -253,4 +250,10 @@
 	url = https://aur.archlinux.org/nvidia-dkms.git
 [submodule "ignition-math"]
 	path = ignition-math
-	url = https://aur.archlinux.org/ignition-math.git
+	url = ssh+git://aur@aur.archlinux.org/ignition-math.git
+[submodule "python-empy"]
+	path = python-empy
+	url = ssh+git://aur@aur.archlinux.org/python-empy.git
+[submodule "openni2"]
+	path = openni2
+	url = ssh+git://aur@aur.archlinux.org/openni2
