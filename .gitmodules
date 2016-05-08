@@ -257,3 +257,9 @@
 [submodule "openni2"]
 	path = openni2
 	url = ssh+git://aur@aur.archlinux.org/openni2
+[submodule "pcl"]
+	path = pcl
+	url = ssh+git://aur@aur.archlinux.org/pcl.git
+[submodule "python-proselint"]
+	path = python-proselint
+	url = ssh+git://aur@aur.archlinux.org/python-proselint
