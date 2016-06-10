@@ -263,3 +263,6 @@
 [submodule "python-proselint"]
 	path = python-proselint
 	url = ssh+git://aur@aur.archlinux.org/python-proselint
+[submodule "python-catkin-lint"]
+	path = python-catkin-lint
+	url = ssh+git://aur@aur.archlinux.org/python-catkin-lint
