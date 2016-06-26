@@ -269,3 +269,6 @@
 [submodule "python2-catkin-lint"]
 	path = python2-catkin-lint
 	url = ssh+git://aur@aur.archlinux.org/python2-catkin-lint
+[submodule "ignition-transport"]
+	path = ignition-transport
+	url = ssh+git://aur@aur.archlinux.org/ignition-transport
