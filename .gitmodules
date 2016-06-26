@@ -266,3 +266,6 @@
 [submodule "python-catkin-lint"]
 	path = python-catkin-lint
 	url = ssh+git://aur@aur.archlinux.org/python-catkin-lint
+[submodule "python2-catkin-lint"]
+	path = python2-catkin-lint
+	url = ssh+git://aur@aur.archlinux.org/python2-catkin-lint
